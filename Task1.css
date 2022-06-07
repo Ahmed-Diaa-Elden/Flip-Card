@@ -1,0 +1,247 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.flip-card {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column ;
+          flex-direction: column ;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 550px;
+  width: 550px;
+  /* overflow: hidden ; */
+  position: relative;
+  /* border: 1px solid rgb(4, 193, 250); */
+}
+.two_sides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column ;
+          flex-direction: column ;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Card_Name {
+  color: rgb(0, 255, 64);
+}
+.Card_info {
+  color: #15d69c;
+}
+.full_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("photo/Waterfall.jpg");
+   background-color: #abd692; /* Used if the image is unavailable */
+  height: 700px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+.flip-card-front {
+ 
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);;
+  height: 100%;
+  width: 100%;
+  overflow: hidden ;
+  border: 1px solid rgb(4, 193, 250);
+  position: absolute;
+}
+.flip-card-back {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);;
+  height: 100%;
+  width: 100%;
+  overflow: hidden ;
+  border: 1px solid rgb(4, 193, 250);
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+  /* position: absolute; */
+
+  
+  
+}
+
+.flip-card:hover .flip-card-front {
+  -webkit-animation: flip 0.3s ease-in forwards;
+          animation: flip 0.3s ease-in forwards;
+}
+.flip-card:hover .flip-card-back {
+  animation: flip 0.3s 0.3s ease-in forwards reverse;
+}
+@-webkit-keyframes flip {
+  0%{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100%{
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+}
+@keyframes flip {
+  0%{
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  100%{
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+}
+
+/* .test{
+  opacity: 0.7 ;
+
+} */
+.Ahmed{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column ;
+          flex-direction: column ;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  
+}
+#Ahmed {
+    border-radius: 50%;
+    border: 2.5px solid #3961ab;
+    -webkit-animation: top-to-bottom 1s ease-in  ;
+            animation: top-to-bottom 1s ease-in  ;
+    
+  }
+  @-webkit-keyframes top-to-bottom {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+  @keyframes top-to-bottom {
+    0% {
+      -webkit-transform: translateY(-100%);
+              transform: translateY(-100%);
+    }
+    100% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+  }
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .image {
+    /* width: 50%; */
+    /* text-align: center; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+  }
+
+  .image img{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+  }
+  .Elmakan-Logo img{
+    width:150px;
+  }
+  .inf {
+    /* transition: transform 1s ease-in ; */
+    -webkit-animation: left-to-right 1s ease-in ;
+            animation: left-to-right 1s ease-in ;
+  }
+
+.logo_icons {
+  -webkit-animation: bottom-to-top 1s ease-in  ;
+          animation: bottom-to-top 1s ease-in  ;
+    
+}
+@-webkit-keyframes bottom-to-top {
+  0% {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+@keyframes bottom-to-top {
+  0% {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+  @-webkit-keyframes left-to-right {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+  }
+  @keyframes left-to-right {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(0%);
+              transform: translateX(0%);
+    }
+  }
